@@ -1,0 +1,55 @@
+/*General*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: #ACE1E6;
+    
+}
+
+a{
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+    background-color: #E8AEE8;
+    border: 2px dotted red;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+    display: inline-table;
+    text-transform: uppercase;
+}
+
+a:hover{
+
+    background-color: darkorchid;
+    border: 2px dotted darkred;
+}
+
+
+/*Index*/
+.main-page-header{
+    background-color: #FFE9BF;
+    padding: 8px;
+    border-bottom: 5px solid black;
+    text-transform: uppercase;
+}
+
+
+
+
+/*Recipe pages*/
+div.baumkuchen-page, div.pancake-page, div.berliner-page{
+    font-size: 20px;
+}
+
+img{
+    
+}
+
+/*Style Specfic Pages*/
+/*baumkuchen*/
+
+
+/*berliner*/
+
+/*pancakes*/
