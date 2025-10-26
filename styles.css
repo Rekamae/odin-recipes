@@ -6,12 +6,13 @@ body{
     
 }
 
+/*button*/
 a{
     color: black;
     font-size: 20px;
     text-decoration: none;
     background-color: #E8AEE8;
-    border: 2px dotted red;
+    border: 2px solid red;
     border-radius: 20px;
     padding: 10px;
     margin: 10px;
@@ -22,7 +23,7 @@ a{
 a:hover{
 
     background-color: darkorchid;
-    border: 2px dotted darkred;
+    border: 2px solid darkred;
 }
 
 
@@ -32,6 +33,21 @@ a:hover{
     padding: 8px;
     border-bottom: 5px solid black;
     text-transform: uppercase;
+    max-width: 1000px;
+    text-align: center;
+    margin: auto auto;
+    border-radius: 20px;
+}
+
+.background-homepage{
+    text-align: center;
+    background-color: #d3ccc6;
+    margin: 40px auto;
+    padding: 40px;
+    max-width: 1200px;
+    border: 5px solid rgb(102, 73, 31);
+    border-radius: 20px;
+   
 }
 
 
@@ -42,12 +58,68 @@ div.baumkuchen-page, div.pancake-page, div.berliner-page{
     font-size: 20px;
 }
 
-img{
-    
+
+
+/*Styles Recipe Pages*/
+
+/*baumkuchen*/
+
+.photo-credit sub{
+    display: block;
+    text-align: center;
+}
+.baumkuchen-page{
+    text-align: center;
+    background-color: #f8deac;
+    margin: 40px auto;
+    padding: 40px;
+    max-width: 900px;
+    border: 5px solid #422a08;
+    border-radius: 20px;
+    box-shadow: 0px 0px 30px #686868;
 }
 
-/*Style Specfic Pages*/
-/*baumkuchen*/
+.baumkuchen-page h1{
+    color: #422a08;
+    font-size: 60px;
+    text-shadow: 2px 2px 4px #494747;
+}
+
+.baumkuchen-page h3{
+    color: #5c411b;
+    font-size: 30px;
+    text-decoration: underline;
+    margin-bottom: 25px;
+}
+
+.baumkuchen-page p,
+.baumkuchen-page li{
+    text-align: justify;
+    padding: 1px;
+    margin: 10px auto;
+    max-width: 700px;
+
+}
+
+.baumkuchen-page ol,
+.baumkuchen-page ul{
+    text-align: center;
+    /* padding: 1px; */
+    margin: 10px auto;
+    display: inline-block;
+    /* padding-left: 20px; */
+
+}
+
+.baumkuchen-image{
+    border: 5px solid #422a08;
+    border-radius: 20px;
+    box-shadow: 0px 0px 30px #686868;
+}
+
+.baumkuchen-image:hover{
+
+}
 
 
 /*berliner*/
