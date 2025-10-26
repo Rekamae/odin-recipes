@@ -3,8 +3,11 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     background-color: #ACE1E6;
+    margin: 0px;
+    padding: 0px;
     
 }
+
 
 /*button*/
 a{
@@ -14,10 +17,11 @@ a{
     background-color: #E8AEE8;
     border: 2px solid red;
     border-radius: 20px;
-    padding: 10px;
-    margin: 10px;
-    display: inline-table;
+    padding: 10px 20px;
+    margin: 5px;
+    display: inline-block;
     text-transform: uppercase;
+    transition: 0.3s ease-out;
 }
 
 a:hover{
@@ -33,25 +37,29 @@ a:hover{
     padding: 8px;
     border-bottom: 5px solid black;
     text-transform: uppercase;
-    max-width: 1000px;
-    text-align: center;
-    margin: auto auto;
+    max-width: 800px;
+    margin: 40px auto 30px;
     border-radius: 20px;
 }
 
+/*Homepage background*/
 .background-homepage{
     text-align: center;
     background-color: #d3ccc6;
-    margin: 40px auto;
-    padding: 40px;
-    max-width: 1200px;
+    margin: 0 auto 40px;
+    padding: 40px 20px;
+    max-width: 600px;
     border: 5px solid rgb(102, 73, 31);
     border-radius: 20px;
+    box-shadow: 0px 0px 12px #686868;
    
 }
 
-
-
+/*Photo Credits*/
+.photo-credit sub{
+    display: block;
+    text-align: center;
+}
 
 /*Recipe pages*/
 div.baumkuchen-page, div.pancake-page, div.berliner-page{
@@ -62,66 +70,131 @@ div.baumkuchen-page, div.pancake-page, div.berliner-page{
 
 /*Styles Recipe Pages*/
 
-/*baumkuchen*/
-
-.photo-credit sub{
-    display: block;
+.baumkuchen-page,
+.berliner-page,
+.pancake-page{
     text-align: center;
-}
-.baumkuchen-page{
-    text-align: center;
-    background-color: #f8deac;
     margin: 40px auto;
     padding: 40px;
     max-width: 900px;
-    border: 5px solid #422a08;
     border-radius: 20px;
     box-shadow: 0px 0px 30px #686868;
 }
 
-.baumkuchen-page h1{
-    color: #422a08;
+.baumkuchen-page h1,
+.berliner-page h1,
+.pancake-page h1{
     font-size: 60px;
     text-shadow: 2px 2px 4px #494747;
 }
 
-.baumkuchen-page h3{
-    color: #5c411b;
+.baumkuchen-page h3,
+.berliner-page h3,
+.pancake-page h3{
     font-size: 30px;
     text-decoration: underline;
     margin-bottom: 25px;
 }
 
 .baumkuchen-page p,
-.baumkuchen-page li{
+.baumkuchen-page li,
+.berliner-page p,
+.berliner-page li,
+.pancake-page p,
+.pancake-page li{
     text-align: justify;
-    padding: 1px;
+    line-height: 1.5;
     margin: 10px auto;
     max-width: 700px;
 
 }
 
 .baumkuchen-page ol,
-.baumkuchen-page ul{
-    text-align: center;
-    /* padding: 1px; */
+.baumkuchen-page ul,
+.berliner-page ol,
+.berliner-page ul,
+.pancake-page ol,
+.pancake-page ul{
     margin: 10px auto;
     display: inline-block;
-    /* padding-left: 20px; */
+    padding-left: 20px;
+    text-align: left;
 
+}
+
+.baumkuchen-image,
+.berliner-image,
+.pancake-image{
+    width: 500px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0px 0px 30px #686868;
+    transition: 0.3s ease, 0.3s ease-in-out;
+}
+
+.baumkuchen-image:hover,
+.berliner-image:hover,
+.pancake-image:hover{
+    transform: scale(1.02);
+}
+
+
+/*baumkuchen*/
+.baumkuchen-page{
+    background-color: #f8deac;
+    border: 3px solid #8b5e3c;
+}
+.baumkuchen-page h1{
+    color: #422a08;
+   
+}
+
+.baumkuchen-page h3{
+    color: #806440;
+    
 }
 
 .baumkuchen-image{
-    border: 5px solid #422a08;
-    border-radius: 20px;
-    box-shadow: 0px 0px 30px #686868;
-}
-
-.baumkuchen-image:hover{
-
+    border: 5px solid #8b5e3c;
 }
 
 
-/*berliner*/
+/* berliner*/
+.berliner-page{
+    background-color: #f5c5e3;
+    border: 3px solid #885574;
+}
+.berliner-page h1{
+    color: #3e0e32;
+   
+}
+
+.berliner-page h3{
+    color: #3e0e32;
+    
+}
+
+.berliner-image{
+    border: 5px solid #885574;
+}
 
 /*pancakes*/
+.pancake-page{
+    background-color: #f5e6c5;
+    border: 3px solid #d7b467;
+}
+.pancake-page h1{
+    color: #c9972b;
+   
+}
+
+.pancake-page h3{
+    color: #bc9c55;
+    
+}
+
+.pancake-image{
+    margin: 20px auto;
+    border: 5px solid #d7b467;
+    
+}
